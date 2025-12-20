@@ -156,8 +156,8 @@ Order on WhatsApp
 </a>
 
 <!-- MODAL -->
-<div id="modal">
-  <div class="modal-box">
+<div id="modal" onclick="closeModal()">
+  <div class="modal-box" onclick="event.stopPropagation()">
     <h2 id="mTitle"></h2>
 
     <p id="mDesc" style="color:#ccc;line-height:1.6;"></p>
