@@ -167,9 +167,10 @@ Order on WhatsApp
 </div>
 
 <script>
-function openProduct(name, price){
+function openProduct(name, price, desc){
   document.getElementById("mTitle").innerText = name;
   document.getElementById("mPrice").innerText = price;
+  document.getElementById("mDesc").innerText = desc;
 
   const msg =
     "Hello Bee Kiss 👋%0A"+
@@ -181,10 +182,6 @@ function openProduct(name, price){
     "https://wa.me/919961629597?text="+msg;
 
   document.getElementById("modal").style.display="flex";
-}
-
-function closeModal(){
-  document.getElementById("modal").style.display="none";
 }
 </script>
 
