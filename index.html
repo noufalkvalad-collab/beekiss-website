@@ -33,18 +33,21 @@
     margin-bottom: 12px;
   }
 
-  /* HERO SECTION (UPDATED IMAGE) */
+  /* HERO SECTION (FIXED IMAGE) */
   .hero {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* തേനീച്ചക്കൂടിന്റെ ചിത്രം ഇവിടെ ചേർത്തു */
-    background: linear-gradient(rgba(5, 20, 14, 0.85), rgba(5, 20, 14, 0.7)), 
-                url('https://images.unsplash.com/photo-1555447405-058a98b9519d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    
+    /* പുതിയ തേനീച്ചക്കൂട് ചിത്രം + കുറഞ്ഞ ഷെയ്‌ഡ് */
+    background: linear-gradient(rgba(11, 46, 30, 0.7), rgba(11, 46, 30, 0.5)), 
+                url('https://images.unsplash.com/photo-1587049352846-4a222e784d38?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     padding: 20px;
   }
 
@@ -60,6 +63,7 @@
     margin-top: 10px;
     font-weight: 500;
     color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
   }
 
   .hero .soft {
@@ -67,9 +71,10 @@
     font-size: 1rem;
     opacity: 0.9;
     font-style: italic;
+    color: #f0f0f0;
   }
 
-  /* PREMIUM BUTTON */
+  /* BUTTON STYLE */
   .btn {
     display: inline-block;
     margin-top: 35px;
@@ -183,7 +188,6 @@
     border-top: 1px solid #1a1a1a;
   }
 
-  /* Responsive Text adjustments */
   @media (max-width: 600px) {
     .hero h1 { font-size: 2.5rem; }
     .card { text-align: center; }
