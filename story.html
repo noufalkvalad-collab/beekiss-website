@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Bee Kiss Story | Journey of Purity</title>
 
+<!-- PRELOAD HERO IMAGE -->
+<link rel="preload" as="image" href="beekiss_honey.jpeg">
+
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;700&family=Gayathri:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -53,7 +56,7 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
 .reveal{
   opacity:0;
   transform:translateY(30px);
-  transition:all .9s ease;
+  transition:all .6s ease;
 }
 .reveal.show{
   opacity:1;
@@ -93,12 +96,13 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
 /* images */
 .visual-img{
   width:100%;
+  height:auto;
   border-radius:22px;
   margin:50px 0;
   border:1px solid var(--gold);
 }
 
-/* image gallery */
+/* gallery */
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -107,6 +111,7 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
 }
 .gallery img{
   width:100%;
+  height:auto;
   border-radius:18px;
   border:1px solid rgba(244,196,48,.35);
 }
@@ -166,7 +171,14 @@ footer{
     </div>
   </div>
 
-  <img src="beekiss_trial_11.png" class="visual-img reveal" alt="Forest Honey Collection">
+  <!-- MAIN IMAGE -->
+  <img src="beekiss_trial_11.png"
+       class="visual-img reveal"
+       loading="lazy"
+       decoding="async"
+       width="900"
+       height="600"
+       alt="Forest Honey Collection">
 
   <div class="step reveal">
     <div class="step-icon"><i class="fas fa-hands"></i></div>
@@ -181,10 +193,10 @@ footer{
 
   <!-- IMAGE GALLERY -->
   <div class="gallery reveal">
-    <img src="beekiss_trial_12.png" alt="">
-    <img src="beekiss_trial_14.png" alt="">
-    <img src="beekiss_stick_1.png" alt="">
-    <img src="turmaric.jpg" alt="">
+    <img src="beekiss_trial_12.png" loading="lazy" decoding="async" width="400" height="400" alt="">
+    <img src="beekiss_trial_14.png" loading="lazy" decoding="async" width="400" height="400" alt="">
+    <img src="beekiss_stick_1.png" loading="lazy" decoding="async" width="400" height="400" alt="">
+    <img src="turmaric.jpg" loading="lazy" decoding="async" width="400" height="400" alt="">
   </div>
 
   <div class="step reveal">
