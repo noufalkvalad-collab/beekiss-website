@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Bee Kiss Story | Journey of Purity</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;700&family=Gayathri:wght@400;700&family=Playfair+Display:italic,wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;700&family=Gayathri:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
@@ -29,10 +29,10 @@ body{
 h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
 
 .story-header{
-  height:60vh;
+  height:65vh;
   background:
-    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-    url("1001484326.jpj.jpeg");
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url("beekiss_honey.jpeg");
   background-size:cover;
   background-position:center;
   display:flex;
@@ -49,40 +49,33 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
   padding:80px 20px;
 }
 
-/* ================= ANIMATION BASE ================= */
+/* animation */
 .reveal{
   opacity:0;
   transform:translateY(30px);
-  transition:all 0.9s ease;
+  transition:all .9s ease;
 }
 .reveal.show{
   opacity:1;
-  transform:translateY(0);
-}
-.reveal.scale{
-  transform:scale(.96);
-}
-.reveal.scale.show{
-  transform:scale(1);
+  transform:none;
 }
 
-/* ================= QUOTE CARD ================= */
+/* philosophy card */
 .philosophy-card{
   background:var(--accent);
   padding:45px;
   border-radius:28px;
-  border:1px solid rgba(244,196,48,.2);
+  border:1px solid rgba(244,196,48,.25);
   text-align:center;
   margin-top:-120px;
   box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
 
-/* ================= STEPS ================= */
+/* steps */
 .step{
   display:flex;
   gap:30px;
-  margin:60px 0;
-  align-items:flex-start;
+  margin:70px 0;
 }
 .step-icon{
   width:60px;
@@ -97,15 +90,28 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
   flex-shrink:0;
 }
 
-/* ================= IMAGE ================= */
+/* images */
 .visual-img{
   width:100%;
   border-radius:22px;
-  margin:40px 0;
+  margin:50px 0;
   border:1px solid var(--gold);
 }
 
-/* ================= CTA ================= */
+/* image gallery */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin:60px 0;
+}
+.gallery img{
+  width:100%;
+  border-radius:18px;
+  border:1px solid rgba(244,196,48,.35);
+}
+
+/* CTA */
 .btn-final{
   padding:20px 55px;
   background:var(--gold);
@@ -115,21 +121,13 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
   border-radius:50px;
   display:inline-block;
   margin-top:40px;
-  transition:.3s;
-}
-.btn-final.pulse.show{
-  animation:pulse 1.2s ease 1;
-}
-@keyframes pulse{
-  0%{transform:scale(1)}
-  50%{transform:scale(1.05)}
-  100%{transform:scale(1)}
 }
 
+/* footer */
 footer{
   text-align:center;
   padding:50px 20px;
-  opacity:.55;
+  opacity:.6;
 }
 </style>
 </head>
@@ -152,7 +150,7 @@ footer{
     <p class="malayalam">
       വയനാടൻ വനങ്ങളിലെ ഓരോ തുള്ളി തേനിനും പിന്നിൽ
       സത്യസന്ധമായ ഒരു കഥയുണ്ട്.  
-      അത് ഒരു ബിസിനസ്സ് മാത്രമല്ല —  
+      അത് ഒരു ഉൽപ്പന്നമല്ല —  
       അത് പ്രകൃതിയോടുള്ള ഒരു വാഗ്ദാനമാണ്.
     </p>
   </div>
@@ -162,25 +160,31 @@ footer{
     <div>
       <h3>From the Wild</h3>
       <p class="malayalam">
-        വയനാടൻ വനങ്ങളിൽ, പ്രകൃതിയുടെ താളത്തിനൊപ്പം,
-        ആദിവാസി കൂട്ടായ്മകൾ ശേഖരിക്കുന്ന അസ്സൽ തേൻ.
+        വയനാടൻ വനങ്ങളിൽ ആദിവാസി കൂട്ടായ്മകൾ
+        ശേഖരിക്കുന്ന അസ്സൽ വനതേൻ.
       </p>
     </div>
   </div>
 
-  <img src="1001484326.jpj.jpeg"
-       class="visual-img reveal scale"
-       alt="Bee Kiss Forest Honey – Beekeeper & Honey Jars">
+  <img src="beekiss_trial_11.png" class="visual-img reveal" alt="Forest Honey Collection">
 
   <div class="step reveal">
     <div class="step-icon"><i class="fas fa-hands"></i></div>
     <div>
       <h3>Handled with Respect</h3>
       <p class="malayalam">
-        ചൂടാക്കലോ രാസവസ്തുക്കളോ ഇല്ല.
-        തേനിന്റെ തനിമയും വിശുദ്ധിയും 그대로.
+        ചൂടാക്കലില്ല. രാസവസ്തുക്കളില്ല.
+        തേനിന്റെ സ്വഭാവം 그대로.
       </p>
     </div>
+  </div>
+
+  <!-- IMAGE GALLERY -->
+  <div class="gallery reveal">
+    <img src="beekiss_trial_12.png" alt="">
+    <img src="beekiss_trial_14.png" alt="">
+    <img src="beekiss_stick_1.png" alt="">
+    <img src="turmaric.jpg" alt="">
   </div>
 
   <div class="step reveal">
@@ -196,7 +200,7 @@ footer{
 
   <div style="text-align:center">
     <a href="https://wa.me/919961629597"
-       class="btn-final reveal pulse">
+       class="btn-final reveal">
        Bee Kiss അനുഭവിക്കാം
     </a>
   </div>
@@ -204,7 +208,9 @@ footer{
 </div>
 
 <footer>
-  <p>Bee Kiss – Fresh Valley<br>Wayanad, Kerala<br>Pure. Honest. Forest-born.</p>
+  Bee Kiss – Fresh Valley<br>
+  Wayanad, Kerala<br>
+  Pure • Honest • Forest-born
 </footer>
 
 <script>
