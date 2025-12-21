@@ -3,262 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Bee Kiss | Pure Wayanad Forest Honey</title>
 
-<meta name="description" content="Bee Kiss brings pure forest honey from Wayanad. No sugar, no chemicals. Not just honey, but a promise of trust.">
-<meta name="keywords" content="Bee Kiss Honey, Wayanad Forest Honey, Pure Honey Kerala, Honey Stick, Raw Honey">
-<meta name="author" content="Bee Kiss – Fresh Valley">
-
-<meta property="og:title" content="Bee Kiss – Pure Forest Honey from Wayanad">
-<meta property="og:description" content="തേൻ മധുരം തന്നെയാണ്. പക്ഷേ വിശ്വാസം അതിലും മധുരമാണ്.">
-<meta property="og:type" content="website">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;600&family=Gayathri:wght@400;700&family=Playfair+Display:italic,wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;700&family=Gayathri:wght@400;700&family=Playfair+Display:italic,wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
 :root{
-  --forest:#070f0c;
-  --green:#1a3c2a;
-  --gold:#f4c430;
-  --cream:#fdfbf7;
-  --glass:rgba(255,255,255,0.08);
+--gold:#f4c430;
+--forest:#070f0c;
+--green:#1a3c2a;
+--cream:#fdfbf7;
+--glass:rgba(255,255,255,0.1);
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
 body{
-  font-family:'Montserrat',sans-serif;
-  background:var(--forest);
-  color:var(--cream);
-  line-height:1.7;
+font-family:'Montserrat',sans-serif;
+background:var(--forest);
+color:var(--cream);
+line-height:1.6;
 }
-h1,h2,h3{
-  font-family:'Cinzel',serif;
-  color:var(--gold);
-  letter-spacing:2px;
-}
-.malayalam{
-  font-family:'Gayathri',sans-serif;
-}
-.section{
-  padding:90px 20px;
-  max-width:1200px;
-  margin:auto;
-}
-.btn{
-  display:inline-block;
-  margin-top:30px;
-  padding:18px 45px;
-  background:var(--gold);
-  color:#000;
-  text-decoration:none;
-  font-weight:700;
-  border-radius:50px;
-  transition:.3s;
-}
-.btn:hover{transform:scale(1.05);background:#fff;}
+.malayalam{font-family:'Gayathri',sans-serif;}
+h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold);letter-spacing:2px;}
+.section{padding:80px 20px;max-width:1200px;margin:auto;}
+html{scroll-behavior:smooth;}
 
 /* HERO */
 .hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  background:
-  linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)),
-  url("https://images.pexels.com/photos/17686456/pexels-photo-17686456.jpeg");
-  background-size:cover;
-  background-position:center;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)),
+url("https://images.pexels.com/photos/17686456/pexels-photo-17686456.jpeg");
+background-size:cover;
+background-position:center;
 }
 .hero-box{
-  padding:60px;
-  border-radius:35px;
-  background:rgba(0,0,0,.45);
-  backdrop-filter:blur(8px);
-  border:1px solid rgba(244,196,48,.25);
+padding:55px;
+border-radius:30px;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(10px);
+border:1px solid rgba(244,196,48,.25);
 }
 .hero h1{font-size:clamp(3rem,8vw,6rem);}
-.hero p{margin-top:15px;letter-spacing:3px;text-transform:uppercase;}
-.hero .emotional{
-  margin-top:25px;
-  font-size:1.1rem;
-  letter-spacing:1px;
-  opacity:.9;
+.hero p{letter-spacing:3px;margin:15px 0;}
+.btn{
+padding:18px 45px;
+background:var(--gold);
+color:#000;
+border-radius:50px;
+text-decoration:none;
+font-weight:800;
+display:inline-block;
+margin-top:25px;
 }
 
-/* STORY */
-.story{
-  background:linear-gradient(180deg,#070f0c,#0d1b15);
-  border-top:1px solid var(--glass);
+/* ABOUT */
+.about-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:60px;
+align-items:center;
 }
-.story-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:60px;
-  align-items:center;
+.about-grid img{
+width:100%;
+border-radius:30px;
+border:2px solid var(--gold);
+box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
-.story img{
-  width:100%;
-  border-radius:30px;
-  border:2px solid var(--gold);
-}
-.story p{font-size:1.15rem;opacity:.9;margin-bottom:20px;}
 
-/* PRODUCTS */
-.products{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-  margin-top:50px;
+/* COLLECTIONS */
+.collection-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:50px;
 }
 .card{
-  background:linear-gradient(145deg,#14241c,#070f0c);
-  padding:40px;
-  border-radius:25px;
-  border:1px solid var(--glass);
-  transition:.4s;
+background:linear-gradient(145deg,#14241c,#070f0c);
+padding:40px;
+border-radius:25px;
+border:1px solid var(--glass);
+text-align:center;
+transition:.4s;
 }
 .card:hover{transform:translateY(-12px);border-color:var(--gold);}
-.card h3{margin-bottom:10px;}
-.card p{opacity:.85;}
+.card i{font-size:3rem;color:var(--gold);margin-bottom:15px;}
 
 /* SPOTLIGHT */
 .spotlight{
-  background:
-  linear-gradient(rgba(26,60,42,.9),rgba(7,15,12,.95)),
-  url("https://images.pexels.com/photos/28714404/pexels-photo-28714404.jpeg");
-  background-size:cover;
-  border-radius:50px;
-  padding:90px 30px;
-  text-align:center;
+background:
+linear-gradient(rgba(26,60,42,.9),rgba(7,15,12,.95)),
+url("https://images.pexels.com/photos/33260/pexels-photo-33260.jpeg");
+background-size:cover;
+border-radius:50px;
+padding:90px 30px;
+margin:80px 20px;
+text-align:center;
 }
 .spotlight img{
-  max-width:320px;
-  border-radius:25px;
-  box-shadow:0 20px 40px rgba(0,0,0,.6);
+max-width:320px;
+border-radius:25px;
+box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
-.price{
-  font-size:4rem;
-  font-weight:900;
-  color:var(--gold);
-  margin:25px 0;
-}
+.price{font-size:4rem;font-weight:900;color:var(--gold);margin:20px 0;}
 
 /* PHILOSOPHY */
 .philosophy{
-  background:#000;
-  padding:120px 20px;
-  text-align:center;
-  font-family:'Playfair Display',serif;
-  font-size:clamp(1.8rem,5vw,3rem);
-  font-style:italic;
-  color:var(--gold);
-  border-top:1px solid var(--green);
+padding:120px 20px;
+background:#000;
+text-align:center;
+font-family:'Playfair Display',serif;
+font-size:clamp(1.8rem,5vw,3rem);
+font-style:italic;
+color:var(--gold);
+border-top:1px solid var(--green);
 }
 
 /* FOOTER */
 footer{
-  padding:80px 20px;
-  background:#020a07;
-  text-align:center;
-  border-top:1px solid var(--glass);
-  opacity:.85;
+padding:80px 20px;
+background:#020a07;
+text-align:center;
+border-top:1px solid var(--glass);
 }
-
-@media(max-width:768px){
-  .hero-box{padding:40px;}
+.wa{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#25d366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:35px;
+text-decoration:none;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-box">
-    <p>Direct from Wayanad Forest</p>
-    <h1>BEE KISS</h1>
-    <div class="emotional malayalam">
-      വനത്തിൽ നിന്നുള്ള തേൻ മാത്രമല്ല…<br>
-      വിശ്വാസത്തോടെ കൈമാറുന്ന ഒരു വാഗ്ദാനം.
-    </div>
-    <a href="#product" class="btn">ശുദ്ധത അനുഭവിക്കൂ</a>
-  </div>
-</section>
+<header class="hero">
+<div class="hero-box">
+<p>Direct from Wayanad Forest</p>
+<h1>BEE KISS</h1>
+<p class="malayalam">വനത്തിൽ നിന്നുള്ള തേൻ മാത്രമല്ല…<br>വിശ്വാസത്തോടെ കൈമാറുന്ന ഒരു വാഗ്ദാനം.</p>
+<a href="#product" class="btn">ശുദ്ധത അനുഭവിക്കൂ</a>
+</div>
+</header>
 
-<!-- STORY -->
-<section class="section story">
-  <div class="story-grid">
-    <img src="https://images.pexels.com/photos/35213481/pexels-photo-35213481.jpeg" alt="Forest Honey Collection">
-    <div>
-      <h2>The Forest Promise</h2>
-      <p class="malayalam">
-        Bee Kiss ഒരു വലിയ ഫാക്ടറിയല്ല.<br>
-        വനത്തിൽ തേൻ ശേഖരിക്കുന്ന കൈകളും  
-        അത് സൂക്ഷിച്ച് നിങ്ങളിലേക്ക് എത്തിക്കുന്ന  
-        ഒരു ചെറിയ പക്ഷേ സത്യസന്ധമായ ശ്രമമാണ്.
-      </p>
-      <p class="malayalam">
-        ഞങ്ങൾ വിൽക്കുന്നത് തേൻ മാത്രമല്ല.  
-        ഞങ്ങൾ കാത്തുസൂക്ഷിക്കുന്നത് വിശ്വാസമാണ്.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUCTS -->
 <section class="section">
-  <h2 style="text-align:center;">Our Forest Treasures</h2>
-  <div class="products">
-    <div class="card">
-      <h3>Honey Stick</h3>
-      <p class="malayalam">യാത്രക്കും ദിവസേന energy-ക്കും  
-      വിശ്വാസത്തോടെ കൈവശം വയ്ക്കാവുന്ന തേൻ.</p>
-      <strong style="color:var(--gold);">₹10 / Stick</strong>
-    </div>
-    <div class="card">
-      <h3>Wild Raw Honey</h3>
-      <p class="malayalam">വീട്ടിൽ അമ്മ കുട്ടികൾക്ക്  
-      ആത്മവിശ്വാസത്തോടെ നൽകുന്ന തേൻ.</p>
-    </div>
-    <div class="card">
-      <h3>Ginger Honey</h3>
-      <p class="malayalam">ജലദോഷം വന്നാൽ  
-      മുത്തശ്ശി പറയുന്ന പരിഹാരം.</p>
-    </div>
-  </div>
+<div class="about-grid">
+<img src="https://images.pexels.com/photos/35213481/pexels-photo-35213481.jpeg" alt="Beehive with bees">
+<div>
+<h2>The Forest Promise</h2>
+<p class="malayalam">
+വയനാടൻ വനങ്ങളിൽ നിന്ന് തേൻ ശേഖരിക്കുന്ന കൈകളിൽ നിന്ന്  
+നേരിട്ട് നിങ്ങളുടെ കൈകളിലേക്ക് എത്തുന്ന  
+മായം കലരാത്ത ശുദ്ധ തേൻ.
+</p>
+<p class="malayalam">
+ഞങ്ങൾ വിൽക്കുന്നത് തേൻ മാത്രമല്ല.  
+ഞങ്ങൾ കാത്തുസൂക്ഷിക്കുന്നത് വിശ്വാസമാണ്.
+</p>
+</div>
+</div>
 </section>
 
-<!-- SPOTLIGHT -->
+<section class="section" style="background:rgba(255,255,255,.02);border-radius:40px;">
+<h2 style="text-align:center;">Our Forest Treasures</h2>
+<div class="collection-grid">
+<div class="card">
+<i class="fas fa-vial"></i>
+<h3>Honey Stick</h3>
+<p class="malayalam">യാത്രയ്ക്കും ദിവസേന energy-ക്കും.</p>
+<strong style="color:var(--gold);">₹10 / Stick</strong>
+</div>
+<div class="card">
+<i class="fas fa-jar"></i>
+<h3>Wild Raw Honey</h3>
+<p class="malayalam">വീട്ടിൽ കുടുംബത്തിന് വിശ്വാസത്തോടെ.</p>
+</div>
+<div class="card">
+<i class="fas fa-hand-holding-heart"></i>
+<h3>Ginger Honey</h3>
+<p class="malayalam">ജലദോഷത്തിന് മുത്തശ്ശിയുടെ പരിഹാരം.</p>
+</div>
+</div>
+</section>
+
 <section id="product" class="spotlight">
-  <img src="https://images.pexels.com/photos/9105957/pexels-photo-9105957.jpeg" alt="Bee Kiss Honey Stick">
-  <h2 style="color:#fff;margin-top:30px;">Pure Forest Honey Stick</h2>
-  <p class="malayalam" style="max-width:600px;margin:20px auto;opacity:.85;">
-    ഒരു സ്റ്റിക്ക്.  
-    ഒരു തുള്ളി വനതേൻ.  
-    ഒരു കുടുംബത്തിന്റെ വിശ്വാസം.
-  </p>
-  <div class="price">₹10</div>
-  <a class="btn" href="https://wa.me/919961629597?text=Hello Bee Kiss, I want to order Honey Sticks">
-    വനത്തിൽ നിന്ന് നേരിട്ട് വാങ്ങൂ
-  </a>
+<img src="https://images.pexels.com/photos/28714404/pexels-photo-28714404.jpeg" alt="Raw honey dripping from comb">
+<h2 style="color:#fff;margin-top:30px;">Pure Forest Honey Stick</h2>
+<p class="malayalam" style="max-width:600px;margin:20px auto;">
+ഒരു സ്റ്റിക്ക്.<br>ഒരു തുള്ളി വനതേൻ.<br>ഒരു കുടുംബത്തിന്റെ വിശ്വാസം.
+</p>
+<div class="price">₹10</div>
+<a class="btn" href="https://wa.me/919961629597?text=Hello Bee Kiss, I want to order Honey Sticks">
+വനത്തിൽ നിന്ന് നേരിട്ട് വാങ്ങൂ
+</a>
 </section>
 
-<!-- PHILOSOPHY -->
 <section class="philosophy malayalam">
-  “തേൻ മധുരം തന്നെയാണ്.<br>
-  പക്ഷേ <strong>വിശ്വാസം</strong> അതിലും മധുരമാണ്.”
+“തേൻ മധുരം തന്നെയാണ്.<br>
+പക്ഷേ <strong>വിശ്വാസം</strong> അതിലും മധുരമാണ്.”
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <h3>BEE KISS – FRESH VALLEY</h3>
-  <p>Wayanad, Kerala</p>
-  <p style="font-size:.8rem;opacity:.4;">© 2025 Bee Kiss. Pure. Honest. Trust.</p>
+<h3>BEE KISS – FRESH VALLEY</h3>
+<p>Wayanad, Kerala</p>
+<p style="opacity:.4;font-size:.8rem;">© 2025 Bee Kiss</p>
 </footer>
+
+<a href="https://wa.me/919961629597" class="wa">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 </body>
 </html>
