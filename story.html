@@ -3,94 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Bee Kiss Story | Pure Forest Journey</title>
+    <title>The Bee Kiss Story | Journey of Purity</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;700&family=Gayathri:wght@400;700&family=Playfair+Display:italic,wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         :root { --gold: #f4c430; --dark: #070f0c; --accent: #14241c; --cream: #fdfbf7; }
         body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--dark); color: var(--cream); line-height: 1.8; }
         .malayalam { font-family: 'Gayathri', sans-serif; }
         h1, h2 { font-family: 'Cinzel', serif; color: var(--gold); text-align: center; }
-        
-        /* Hero */
-        .story-hero {
+
+        .story-header {
             height: 60vh;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1587049352846-4a222e784d38?q=80&w=2070&auto=format&fit=crop');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?q=80&w=2073&auto=format&fit=crop');
             background-size: cover; background-position: center;
-            display: flex; align-items: center; justify-content: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px;
         }
 
-        .container { max-width: 900px; margin: auto; padding: 60px 20px; }
-
-        /* Philosophy Card */
-        .philosophy-box {
+        .content-wrap { max-width: 900px; margin: auto; padding: 60px 20px; }
+        .philosophy-card {
             background: var(--accent); padding: 40px; border-radius: 30px;
             border: 1px solid rgba(244, 196, 48, 0.2); text-align: center;
             margin-top: -100px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);
         }
 
-        /* Process Steps */
-        .step { display: flex; align-items: flex-start; margin-bottom: 50px; gap: 25px; }
+        .step { display: flex; align-items: flex-start; margin-bottom: 50px; gap: 30px; }
         .step-icon {
-            background: var(--gold); color: var(--dark); width: 50px; height: 50px;
+            background: var(--gold); color: var(--dark); width: 60px; height: 60px;
             border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-size: 1.2rem; flex-shrink: 0;
+            font-size: 1.5rem; flex-shrink: 0;
         }
-        .step-content h3 { color: var(--gold); margin-top: 5px; }
+        .visual-img { width: 100%; border-radius: 20px; margin: 30px 0; border: 1px solid var(--gold); }
 
-        .visual-img { width: 100%; border-radius: 20px; margin: 20px 0; border: 1px solid var(--gold); }
-
-        .btn-order {
-            display: block; width: fit-content; margin: 40px auto; padding: 18px 45px;
-            background: var(--gold); color: var(--dark); text-decoration: none;
-            font-weight: 800; border-radius: 50px; text-transform: uppercase; transition: 0.3s;
+        .btn-final {
+            padding: 20px 50px; background: var(--gold); color: var(--dark);
+            text-decoration: none; font-weight: 800; border-radius: 50px;
+            display: inline-block; transition: 0.3s; margin-top: 40px;
         }
-        .btn-order:hover { transform: scale(1.05); background: #fff; }
+        .btn-final:hover { transform: scale(1.05); background: #fff; }
     </style>
 </head>
 <body>
 
-    <section class="story-hero">
-        <h1 style="font-size: clamp(2rem, 6vw, 4rem);">Our Sacred Story</h1>
-    </section>
+    <header class="story-header">
+        <h1>Our Sacred Story</h1>
+        <p class="malayalam" style="font-size: 1.4rem;">കാടിന്റെ ഉള്ളിൽ നിന്ന് നിങ്ങളുടെ കൈകളിലേക്ക്...</p>
+    </header>
 
-    <div class="container">
-        <div class="philosophy-box">
-            <h2 class="malayalam">“തേൻ മധുരം തന്നെയാണ്.<br>പക്ഷേ വിശ്വാസം അതിലും മധുരമാണ്.”</h2>
-            <p class="malayalam">Bee Kiss കേവലം ഒരു ബ്രാൻഡ് അല്ല. വയനാടൻ വനങ്ങളിലെ പരിശുദ്ധി മാറ്റമില്ലാതെ നിങ്ങളിലേക്ക് എത്തിക്കാനുള്ള ഞങ്ങളുടെ പ്രതിജ്ഞയാണിത്.</p>
+    <div class="content-wrap">
+        <div class="philosophy-card">
+            <h2 class="malayalam">“തേൻ മധുരം തന്നെയാണ്. പക്ഷേ വിശ്വാസം അതിലും മധുരമാണ്.”</h2>
+            <p class="malayalam">വയനാടൻ വനങ്ങളിലെ ഓരോ തുള്ളി തേനിനും പിന്നിൽ സത്യസന്ധമായ ഒരു കഥയുണ്ട്. അത് കേവലം ഒരു ബിസിനസ്സ് അല്ല, മറിച്ച് പ്രകൃതിയോടുള്ള ഞങ്ങളുടെ സ്നേഹമാണ്.</p>
         </div>
 
-        <h2 style="margin-top: 80px;">The Journey: Hive to Home</h2>
-        
-        <div class="step">
-            <div class="step-icon"><i class="fas fa-mountain"></i></div>
-            <div class="step-content">
-                <h3 class="malayalam">Wild Sourcing (വനത്തിൽ നിന്ന്)</h3>
-                <p class="malayalam">വയനാട്ടിലെ ആഴമേറിയ വനങ്ങളിൽ നിന്ന് ആദിവാസി ഗോത്രവിഭാഗങ്ങൾ പരമ്പരാഗതമായ രീതിയിൽ ശേഖരിക്കുന്ന ശുദ്ധമായ തേൻ. ഇത് പ്രകൃതിയുടെ തനിമ ഒട്ടും ചോരാതെ ശേഖരിക്കപ്പെടുന്നു.</p>
+        <div style="margin-top: 80px;">
+            <div class="step">
+                <div class="step-icon"><i class="fas fa-mountain"></i></div>
+                <div>
+                    <h3>Wild Sourcing (കാട്ടിൽ നിന്ന് നേരിട്ട്)</h3>
+                    <p class="malayalam">വയനാട്ടിലെ ആഴമേറിയ വനങ്ങളിൽ നിന്ന് ആദിവാസി ഗോത്ര വിഭാഗങ്ങൾ പരമ്പരാഗതമായ രീതിയിൽ ശേഖരിക്കുന്ന ശുദ്ധമായ തേൻ.</p>
+                </div>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?q=80&w=800&auto=format&fit=crop" class="visual-img" alt="Wild Sourcing">
+
+            <div class="step">
+                <div class="step-icon"><i class="fas fa-filter"></i></div>
+                <div>
+                    <h3>Cold Filtered (തനിമ മാറാതെ)</h3>
+                    <p class="malayalam">യാതൊരുവിധ പ്രോസസ്സിംഗോ ചൂടാക്കലോ നടത്തുന്നില്ല. തേനിന്റെ സ്വാഭാവിക പോഷകഗുണങ്ങൾ പൂർണ്ണമായും നിലനിർത്തുന്നു.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-icon"><i class="fas fa-check-double"></i></div>
+                <div>
+                    <h3>100% Purity Check</h3>
+                    <p class="malayalam">ഓരോ ബാച്ചും ഗുണനിലവാരം ഉറപ്പുവരുത്തിയ ശേഷം പ്രീമിയം പാക്കിംഗിൽ നിങ്ങളിലേക്ക് എത്തിക്കുന്നു.</p>
+                </div>
             </div>
         </div>
 
-        <img src="https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?q=80&w=800&auto=format&fit=crop" class="visual-img" alt="Wayanad Forest">
-
-        <div class="step">
-            <div class="step-icon"><i class="fas fa-vial"></i></div>
-            <div class="step-content">
-                <h3 class="malayalam">Cold Filtered (ശുദ്ധീകരണം)</h3>
-                <p class="malayalam">തേൻ ചൂടാക്കുകയോ (Pasteurization) രാസവസ്തുക്കൾ ചേർക്കുകയോ ചെയ്യുന്നില്ല. വലിയ മെഴുക് കണികകൾ മാറ്റാൻ വേണ്ടി മാത്രമുള്ള സ്വാഭാവിക അരിക്കൽ രീതിയാണ് ഞങ്ങൾ പിന്തുടരുന്നത്. ഇതിലൂടെ തേനിന്റെ ഔഷധഗുണങ്ങൾ സംരക്ഷിക്കപ്പെടുന്നു.</p>
-            </div>
-        </div>
-
-        <div class="step">
-            <div class="step-icon"><i class="fas fa-shield-check"></i></div>
-            <div class="step-content">
-                <h3 class="malayalam">Quality Check & Packing</h3>
-                <p class="malayalam">ഓരോ തുള്ളിയിലും 100% പരിശുദ്ധി ഉറപ്പുവരുത്തിയ ശേഷം പ്രീമിയം ഗ്ലാസ് കുപ്പികളിൽ പായ്ക്ക് ചെയ്ത് നിങ്ങളിലേക്ക് എത്തിക്കുന്നു.</p>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 60px;">
-            <h2 class="malayalam">ഈ പരിശുദ്ധി ഇപ്പോൾ നിങ്ങളിലേക്കും</h2>
-            <a href="https://wa.me/919961629597?text=Hello%20Bee%20Kiss,%20I%20have%20read%20your%20story%20and%20want%20to%20order%20Wild%20Raw%20Honey." class="btn-order">Order via WhatsApp</a>
+        <div style="text-align: center;">
+            <a href="https://wa.me/919961629597?text=Hello%20Bee%20Kiss,%20I%20read%20your%20story%20and%20want%20to%20order%20Wild%20Raw%20Honey." class="btn-final">Confirm Order via WhatsApp</a>
         </div>
     </div>
 
