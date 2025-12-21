@@ -10,220 +10,288 @@
 
 <style>
 :root{
---gold:#f4c430;
---forest:#070f0c;
---green:#1a3c2a;
---cream:#fdfbf7;
---glass:rgba(255,255,255,0.1);
+  --gold:#f4c430;
+  --forest:#070f0c;
+  --green:#1a3c2a;
+  --cream:#fdfbf7;
+  --glass:rgba(255,255,255,0.1);
 }
+
 *{box-sizing:border-box;margin:0;padding:0;}
+
 body{
-font-family:'Montserrat',sans-serif;
-background:var(--forest);
-color:var(--cream);
-line-height:1.6;
+  font-family:'Montserrat',sans-serif;
+  background:var(--forest);
+  color:var(--cream);
+  line-height:1.6;
+  overflow-x:hidden;
 }
-.malayalam{font-family:'Gayathri',sans-serif;}
-h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold);letter-spacing:2px;}
-.section{padding:80px 20px;max-width:1200px;margin:auto;}
+
 html{scroll-behavior:smooth;}
 
-/* HERO */
+.malayalam{font-family:'Gayathri',sans-serif;}
+
+h1,h2,h3{
+  font-family:'Cinzel',serif;
+  color:var(--gold);
+  letter-spacing:2px;
+}
+
+.section{
+  padding:90px 20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* ================= HERO ================= */
+
 .hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:
-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)),
-url("https://images.pexels.com/photos/17686456/pexels-photo-17686456.jpeg");
-background-size:cover;
-background-position:center;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1598514982410-6b99b8c01d16?auto=format&fit=crop&w=2000&q=80");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  padding:20px;
 }
+
 .hero-box{
-padding:55px;
-border-radius:30px;
-background:rgba(0,0,0,.45);
-backdrop-filter:blur(10px);
-border:1px solid rgba(244,196,48,.25);
+  padding:55px;
+  border-radius:30px;
+  background:rgba(0,0,0,.45);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(244,196,48,.25);
 }
-.hero h1{font-size:clamp(3rem,8vw,6rem);}
-.hero p{letter-spacing:3px;margin:15px 0;}
+
+.hero h1{
+  font-size:clamp(3rem,8vw,6rem);
+  margin-bottom:10px;
+}
+
+.hero p{
+  margin:15px 0;
+  letter-spacing:2px;
+}
+
 .btn{
-padding:18px 45px;
-background:var(--gold);
-color:#000;
-border-radius:50px;
-text-decoration:none;
-font-weight:800;
-display:inline-block;
-margin-top:25px;
+  padding:18px 45px;
+  background:var(--gold);
+  color:#000;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:800;
+  display:inline-block;
+  margin-top:25px;
 }
 
-/* ABOUT */
+/* ================= ABOUT ================= */
+
 .about-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:60px;
-align-items:center;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:60px;
+  align-items:center;
 }
+
 .about-grid img{
-width:100%;
-border-radius:30px;
-border:2px solid var(--gold);
-box-shadow:0 20px 40px rgba(0,0,0,.6);
+  width:100%;
+  border-radius:30px;
+  border:2px solid var(--gold);
+  box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
 
-/* COLLECTIONS */
+/* ================= COLLECTIONS ================= */
+
 .collection-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-margin-top:50px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+  margin-top:50px;
 }
+
 .card{
-background:linear-gradient(145deg,#14241c,#070f0c);
-padding:40px;
-border-radius:25px;
-border:1px solid var(--glass);
-text-align:center;
-transition:.4s;
+  background:linear-gradient(145deg,#14241c,#070f0c);
+  padding:40px;
+  border-radius:25px;
+  border:1px solid var(--glass);
+  text-align:center;
+  transition:.4s;
 }
-.card:hover{transform:translateY(-12px);border-color:var(--gold);}
-.card i{font-size:3rem;color:var(--gold);margin-bottom:15px;}
 
-/* SPOTLIGHT */
+.card:hover{
+  transform:translateY(-12px);
+  border-color:var(--gold);
+}
+
+.card i{
+  font-size:3rem;
+  color:var(--gold);
+  margin-bottom:15px;
+}
+
+/* ================= SPOTLIGHT ================= */
+
 .spotlight{
-background:
-linear-gradient(rgba(26,60,42,.9),rgba(7,15,12,.95)),
-url("https://images.pexels.com/photos/33260/pexels-photo-33260.jpeg");
-background-size:cover;
-border-radius:50px;
-padding:90px 30px;
-margin:80px 20px;
-text-align:center;
+  background:
+    linear-gradient(rgba(26,60,42,.9),rgba(7,15,12,.95)),
+    url("https://images.unsplash.com/photo-28714404?auto=format&fit=crop&w=2000&q=80");
+  background-size:cover;
+  border-radius:50px;
+  padding:90px 30px;
+  margin:80px 20px;
+  text-align:center;
 }
+
 .spotlight img{
-max-width:320px;
-border-radius:25px;
-box-shadow:0 20px 40px rgba(0,0,0,.6);
+  max-width:320px;
+  border-radius:25px;
+  box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
-.price{font-size:4rem;font-weight:900;color:var(--gold);margin:20px 0;}
 
-/* PHILOSOPHY */
+.price{
+  font-size:4rem;
+  font-weight:900;
+  color:var(--gold);
+  margin:20px 0;
+}
+
+/* ================= PHILOSOPHY ================= */
+
 .philosophy{
-padding:120px 20px;
-background:#000;
-text-align:center;
-font-family:'Playfair Display',serif;
-font-size:clamp(1.8rem,5vw,3rem);
-font-style:italic;
-color:var(--gold);
-border-top:1px solid var(--green);
+  padding:120px 20px;
+  background:#000;
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size:clamp(1.8rem,5vw,3rem);
+  font-style:italic;
+  color:var(--gold);
+  border-top:1px solid var(--green);
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer{
-padding:80px 20px;
-background:#020a07;
-text-align:center;
-border-top:1px solid var(--glass);
+  padding:80px 20px;
+  background:#020a07;
+  text-align:center;
+  border-top:1px solid var(--glass);
 }
+
 .wa{
-position:fixed;
-bottom:30px;
-right:30px;
-background:#25d366;
-width:65px;
-height:65px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#fff;
-font-size:35px;
-text-decoration:none;
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  background:#25d366;
+  width:65px;
+  height:65px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:35px;
+  text-decoration:none;
+}
+
+@media(max-width:768px){
+  .hero-box{padding:35px;}
 }
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <header class="hero">
-<div class="hero-box">
-<p>Direct from Wayanad Forest</p>
-<h1>BEE KISS</h1>
-<p class="malayalam">വനത്തിൽ നിന്നുള്ള തേൻ മാത്രമല്ല…<br>വിശ്വാസത്തോടെ കൈമാറുന്ന ഒരു വാഗ്ദാനം.</p>
-<a href="#product" class="btn">ശുദ്ധത അനുഭവിക്കൂ</a>
-</div>
+  <div class="hero-box">
+    <p>Direct from Wayanad Forest</p>
+    <h1>BEE KISS</h1>
+    <p class="malayalam">
+      വനത്തിൽ ജോലി ചെയ്യുന്ന കൈകളിൽ നിന്ന്<br>
+      വിശ്വാസത്തോടെ നിങ്ങളുടെ കൈകളിലേക്ക്.
+    </p>
+    <a href="#product" class="btn">ശുദ്ധത അനുഭവിക്കൂ</a>
+  </div>
 </header>
 
+<!-- ABOUT -->
 <section class="section">
-<div class="about-grid">
-<img src="https://images.pexels.com/photos/35213481/pexels-photo-35213481.jpeg" alt="Beehive with bees">
-<div>
-<h2>The Forest Promise</h2>
-<p class="malayalam">
-വയനാടൻ വനങ്ങളിൽ നിന്ന് തേൻ ശേഖരിക്കുന്ന കൈകളിൽ നിന്ന്  
-നേരിട്ട് നിങ്ങളുടെ കൈകളിലേക്ക് എത്തുന്ന  
-മായം കലരാത്ത ശുദ്ധ തേൻ.
-</p>
-<p class="malayalam">
-ഞങ്ങൾ വിൽക്കുന്നത് തേൻ മാത്രമല്ല.  
-ഞങ്ങൾ കാത്തുസൂക്ഷിക്കുന്നത് വിശ്വാസമാണ്.
-</p>
-</div>
-</div>
+  <div class="about-grid">
+    <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=1200&q=80" alt="Beehive with bees">
+    <div>
+      <h2>The Forest Promise</h2>
+      <p class="malayalam">
+        വയനാടൻ വനങ്ങളിൽ നിന്ന് തേൻ ശേഖരിക്കുന്ന മനുഷ്യരുടെ കൈകളിൽ നിന്ന്  
+        യാതൊരു ഇടനിലക്കാരുമില്ലാതെ നിങ്ങളിലേക്ക് എത്തുന്ന  
+        മായം കലരാത്ത ശുദ്ധ തേൻ.
+      </p>
+      <p class="malayalam">
+        Bee Kiss വിൽക്കുന്നത് തേൻ മാത്രമല്ല.  
+        ഞങ്ങൾ കാത്തുസൂക്ഷിക്കുന്നത് <b>വിശ്വാസം</b> ആണ്.
+      </p>
+    </div>
+  </div>
 </section>
 
+<!-- COLLECTIONS -->
 <section class="section" style="background:rgba(255,255,255,.02);border-radius:40px;">
-<h2 style="text-align:center;">Our Forest Treasures</h2>
-<div class="collection-grid">
-<div class="card">
-<i class="fas fa-vial"></i>
-<h3>Honey Stick</h3>
-<p class="malayalam">യാത്രയ്ക്കും ദിവസേന energy-ക്കും.</p>
-<strong style="color:var(--gold);">₹10 / Stick</strong>
-</div>
-<div class="card">
-<i class="fas fa-jar"></i>
-<h3>Wild Raw Honey</h3>
-<p class="malayalam">വീട്ടിൽ കുടുംബത്തിന് വിശ്വാസത്തോടെ.</p>
-</div>
-<div class="card">
-<i class="fas fa-hand-holding-heart"></i>
-<h3>Ginger Honey</h3>
-<p class="malayalam">ജലദോഷത്തിന് മുത്തശ്ശിയുടെ പരിഹാരം.</p>
-</div>
-</div>
+  <h2 style="text-align:center;">Our Forest Treasures</h2>
+  <div class="collection-grid">
+    <div class="card">
+      <i class="fas fa-vial"></i>
+      <h3>Honey Stick</h3>
+      <p class="malayalam">ദിവസേന energy-ക്കും യാത്രയ്ക്കും.</p>
+      <strong style="color:var(--gold);">₹10 / Stick</strong>
+    </div>
+    <div class="card">
+      <i class="fas fa-jar"></i>
+      <h3>Wild Raw Honey</h3>
+      <p class="malayalam">കുടുംബത്തിനുള്ള വിശ്വാസമുള്ള തേൻ.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-hand-holding-heart"></i>
+      <h3>Ginger Honey</h3>
+      <p class="malayalam">ജലദോഷത്തിന് പ്രകൃതിദത്ത പരിഹാരം.</p>
+    </div>
+  </div>
 </section>
 
+<!-- PRODUCT -->
 <section id="product" class="spotlight">
-<img src="https://images.pexels.com/photos/28714404/pexels-photo-28714404.jpeg" alt="Raw honey dripping from comb">
-<h2 style="color:#fff;margin-top:30px;">Pure Forest Honey Stick</h2>
-<p class="malayalam" style="max-width:600px;margin:20px auto;">
-ഒരു സ്റ്റിക്ക്.<br>ഒരു തുള്ളി വനതേൻ.<br>ഒരു കുടുംബത്തിന്റെ വിശ്വാസം.
-</p>
-<div class="price">₹10</div>
-<a class="btn" href="https://wa.me/919961629597?text=Hello Bee Kiss, I want to order Honey Sticks">
-വനത്തിൽ നിന്ന് നേരിട്ട് വാങ്ങൂ
-</a>
+  <img src="https://images.unsplash.com/photo-28714404?auto=format&fit=crop&w=1200&q=80" alt="Raw honey dripping from comb">
+  <h2 style="color:#fff;margin-top:30px;">Pure Forest Honey Stick</h2>
+  <p class="malayalam" style="max-width:600px;margin:20px auto;">
+    ഒരു സ്റ്റിക്ക്.<br>
+    ഒരു തുള്ളി വനതേൻ.<br>
+    ഒരു കുടുംബത്തിന്റെ വിശ്വാസം.
+  </p>
+  <div class="price">₹10</div>
+  <a class="btn" href="https://wa.me/919961629597?text=Hello Bee Kiss, I want to order Honey Sticks">
+    വനത്തിൽ നിന്ന് നേരിട്ട് വാങ്ങൂ
+  </a>
 </section>
 
+<!-- PHILOSOPHY -->
 <section class="philosophy malayalam">
-“തേൻ മധുരം തന്നെയാണ്.<br>
-പക്ഷേ <strong>വിശ്വാസം</strong> അതിലും മധുരമാണ്.”
+  “തേൻ മധുരം തന്നെയാണ്.<br>
+  പക്ഷേ <strong>വിശ്വാസം</strong> അതിലും മധുരമാണ്.”
 </section>
 
+<!-- FOOTER -->
 <footer>
-<h3>BEE KISS – FRESH VALLEY</h3>
-<p>Wayanad, Kerala</p>
-<p style="opacity:.4;font-size:.8rem;">© 2025 Bee Kiss</p>
+  <h3>BEE KISS – FRESH VALLEY</h3>
+  <p>Wayanad, Kerala</p>
+  <p style="opacity:.4;font-size:.8rem;">© 2025 Bee Kiss</p>
 </footer>
 
 <a href="https://wa.me/919961629597" class="wa">
-<i class="fab fa-whatsapp"></i>
+  <i class="fab fa-whatsapp"></i>
 </a>
 
 </body>
