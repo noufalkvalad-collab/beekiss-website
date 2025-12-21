@@ -3,214 +3,156 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bee Kiss – Pure Forest Honey</title>
+
+<!-- ================= SEO META (GLOBAL) ================= -->
+<title>Bee Kiss | Pure Forest Honey from Wayanad</title>
+
+<meta name="description" content="Bee Kiss offers pure forest honey sourced directly from Wayanad. No sugar, no chemicals. Honest honey delivered via WhatsApp.">
+<meta name="keywords" content="Bee Kiss Honey, Pure Forest Honey, Wayanad Honey, Honey Stick, No Sugar Honey, Natural Honey Kerala">
+<meta name="author" content="Bee Kiss – Fresh Valley">
+
+<meta property="og:title" content="Bee Kiss – Pure Forest Honey from Wayanad">
+<meta property="og:description" content="From deep forests. No sugar. No chemicals. Just honest honey.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IN">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-  :root {
-    --forest-green: #0b2e1e;
-    --honey-gold: #f4c430;
-    --deep-brown: #3e2723;
-    --soft-cream: #fdfbf7;
-    --card-bg: #14241c;
-  }
-
-  body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background: var(--forest-green);
-    color: var(--soft-cream);
-    text-align: center;
-    line-height: 1.6;
-  }
-
-  h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    color: var(--honey-gold);
-    margin-bottom: 12px;
-  }
-
-  /* HERO SECTION (CORRECT HONEYCOMB IMAGE) */
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    /* ഇത്തവണ കൃത്യമായ തേനീച്ചക്കൂട് ചിത്രം നൽകിയിട്ടുണ്ട് */
-    background: linear-gradient(rgba(11, 46, 30, 0.75), rgba(11, 46, 30, 0.55)), 
-                url('https://images.unsplash.com/photo-1555447405-058a98b9519d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px;
-  }
-
-  .hero h1 {
-    font-size: 3.5rem;
-    margin: 0;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  }
-
-  .hero .tagline {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    font-weight: 500;
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-  }
-
-  .hero .soft {
-    margin-top: 20px;
-    font-size: 1rem;
-    opacity: 0.9;
-    font-style: italic;
-    color: #f0f0f0;
-  }
-
-  /* BUTTON STYLE */
-  .btn {
-    display: inline-block;
-    margin-top: 35px;
-    padding: 16px 40px;
-    background: var(--honey-gold);
-    color: var(--forest-green);
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(244, 196, 48, 0.3);
-    border: 2px solid var(--honey-gold);
-  }
-
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(244, 196, 48, 0.5);
-    background: transparent;
-    color: var(--honey-gold);
-  }
-
-  /* SECTIONS */
-  .section { padding: 80px 20px; }
-
-  /* STORY SECTION */
-  .story {
-    background: rgba(0, 0, 0, 0.2);
-    border-top: 1px solid rgba(255,255,255,0.05);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-  }
-  
-  .story p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #e0e0e0;
-  }
-
-  /* PRODUCTS GRID */
-  .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    max-width: 1000px;
-    margin: 40px auto 0;
-  }
-
-  .card {
-    background: var(--card-bg);
-    border: 1px solid rgba(244, 196, 48, 0.2);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: left;
-    transition: transform 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  }
-
-  .card:hover {
-    transform: translateY(-10px);
-    border-color: var(--honey-gold);
-  }
-
-  .card h3 { margin: 0; font-size: 1.5rem; }
-  .card p { font-size: 0.95rem; margin: 10px 0 20px; color: #ccc; }
-  
-  .card a {
-    color: var(--honey-gold);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-  }
-
-  /* TRUST BADGES */
-  .trust {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 40px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .trust div {
-    background: rgba(255,255,255,0.05);
-    padding: 15px 25px;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    border: 1px solid rgba(255,255,255,0.1);
-    color: #fff;
-  }
-
-  /* PHILOSOPHY */
-  .philosophy {
-    background: #05160e;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 1.4rem;
-    color: var(--honey-gold);
-    padding: 100px 20px;
-  }
-
-  /* FOOTER */
-  footer {
-    padding: 50px 20px;
-    background: #020a07;
-    font-size: 0.9rem;
-    color: #777;
-    border-top: 1px solid #1a1a1a;
-  }
-
-  @media (max-width: 600px) {
-    .hero h1 { font-size: 2.5rem; }
-    .card { text-align: center; }
-  }
+:root{
+  --green:#0b2e1e;
+  --gold:#f4c430;
+  --cream:#fdfbf7;
+  --card:#14241c;
+}
+body{
+  margin:0;
+  font-family:'Montserrat',sans-serif;
+  background:var(--green);
+  color:var(--cream);
+  line-height:1.6;
+  text-align:center;
+}
+h1,h2,h3{
+  font-family:'Playfair Display',serif;
+  color:var(--gold);
+}
+.section{
+  padding:90px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:16px 40px;
+  background:var(--gold);
+  color:var(--green);
+  text-decoration:none;
+  font-weight:700;
+  border-radius:50px;
+}
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(rgba(11,46,30,.75),rgba(11,46,30,.6)),
+  url("https://images.unsplash.com/photo-1555447405-058a98b9519d?auto=format&fit=crop&w=1950&q=80");
+  background-size:cover;
+  background-position:center;
+}
+.hero h1{font-size:3.4rem;margin:0;}
+.hero .tagline{font-size:1.2rem;margin-top:10px;}
+.hero .soft{margin-top:20px;font-style:italic;opacity:.9;}
+.story{
+  background:rgba(0,0,0,.2);
+}
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+.card{
+  background:var(--card);
+  padding:30px;
+  border-radius:14px;
+  text-align:left;
+  border:1px solid rgba(244,196,48,.2);
+}
+.card h3{margin-top:0;}
+.card p{font-size:.95rem;color:#ccc;}
+.card a{color:var(--gold);text-decoration:none;font-weight:600;}
+.trust{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+  margin-top:40px;
+}
+.trust div{
+  padding:14px 22px;
+  border-radius:50px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+}
+.product-img{
+  max-width:260px;
+  margin:0 auto 30px;
+}
+.product-img img{
+  width:100%;
+  border-radius:14px;
+}
+ul{
+  max-width:500px;
+  margin:20px auto;
+  text-align:left;
+}
+ul li{margin-bottom:10px;}
+.price{
+  font-size:1.6rem;
+  font-weight:600;
+  margin:20px 0;
+}
+.philosophy{
+  background:#05160e;
+  font-family:'Playfair Display',serif;
+  font-style:italic;
+  font-size:1.4rem;
+  color:var(--gold);
+}
+footer{
+  padding:50px 20px;
+  background:#020a07;
+  font-size:.9rem;
+  color:#777;
+}
+@media(max-width:600px){
+  .hero h1{font-size:2.4rem;}
+}
 </style>
 </head>
 
 <body>
 
+<!-- ================= HERO / HOME ================= -->
 <section class="hero">
   <h1>Bee Kiss</h1>
   <div class="tagline">Pure Forest Honey from Wayanad</div>
-  <div class="soft"> 
+  <div class="soft">
     From deep forests.<br>
     No sugar. No chemicals.<br>
     Just honest honey.
   </div>
-
-  <a class="btn" href="https://wa.me/919961629597?text=Hello%20Bee%20Kiss%20👋%20I%20would%20like%20to%20know%20more">
-    Order on WhatsApp
-  </a>
+  <a class="btn" href="#product">View Our Product</a>
 </section>
 
+<!-- ================= WHY BEE KISS ================= -->
 <section class="section story">
   <h2>Why Bee Kiss?</h2>
   <p>
@@ -218,63 +160,105 @@
     തേൻ ശേഖരിക്കുന്ന ആദിവാസി കൂട്ടായ്മകളിൽ നിന്ന്<br>
     നേരിട്ട് നിങ്ങൾക്ക് എത്തുന്ന<br>
     <strong>മായം കലരാത്ത ശുദ്ധ തേൻ.</strong><br><br>
-    Bee Kiss ഒരു ഉൽപ്പന്നം മാത്രമല്ല,<br>
-    അതൊരു വാഗ്ദാനമാണ്.
+    Bee Kiss ഒരു ഉൽപ്പന്നം മാത്രമല്ല.<br>
+    അത് ഞങ്ങൾ നിങ്ങളോട് ചെയ്യുന്ന ഒരു വാഗ്ദാനമാണ്.
   </p>
 </section>
 
+<!-- ================= PRODUCTS ================= -->
 <section class="section">
   <h2>Our Collections</h2>
   <div class="products">
-    
     <div class="card">
       <h3>Honey Stick</h3>
-      <p>Travel friendly pure honey shots.</p>
-      <a href="https://wa.me/919961629597?text=I%20want%20Honey%20Sticks">View Details →</a>
+      <p>Travel friendly pure honey shots (₹10 sachet).</p>
+      <a href="#product">View Details →</a>
     </div>
-
     <div class="card">
       <h3>Ginger Honey</h3>
-      <p>Natural immunity blend for health.</p>
-      <a href="https://wa.me/919961629597?text=I%20want%20Ginger%20Honey">View Details →</a>
+      <p>Cold & immunity support blend.</p>
     </div>
-
     <div class="card">
       <h3>Turmeric Honey</h3>
-      <p>Traditional wellness golden mix.</p>
-      <a href="https://wa.me/919961629597?text=I%20want%20Turmeric%20Honey">View Details →</a>
+      <p>Daily wellness ayurvedic mix.</p>
     </div>
-
     <div class="card">
       <h3>Wild Raw Honey</h3>
-      <p>Unprocessed forest nectar.</p>
-      <a href="https://wa.me/919961629597?text=I%20want%20Wild%20Raw%20Honey">View Details →</a>
+      <p>Unprocessed forest nectar (limited).</p>
     </div>
-
   </div>
 </section>
 
+<!-- ================= PRODUCT DETAIL ================= -->
+<section id="product" class="section">
+  <h2>Product Details</h2>
+
+  <div class="product-img">
+    <img src="product-honey-stick.png" alt="Bee Kiss Honey Stick">
+  </div>
+
+  <h3>Bee Kiss – Pure Forest Honey Stick</h3>
+
+  <p>
+    വയനാടൻ വനങ്ങളിൽ നിന്ന് നേരിട്ട് ശേഖരിച്ച  
+    <strong>മായം കലരാത്ത 100% ശുദ്ധമായ അസ്സൽ തേൻ.</strong>
+  </p>
+
+  <ul>
+    <li>🍯 100% Pure Forest Honey</li>
+    <li>❌ No Sugar • No Chemicals</li>
+    <li>⚡ Instant Natural Energy</li>
+    <li>🎒 Travel Friendly Stick Pack</li>
+  </ul>
+
+  <div class="price">₹10 / Stick</div>
+
+  <a class="btn" href="https://wa.me/919961629597?text=I%20want%20Bee%20Kiss%20Honey%20Stick">
+    Order on WhatsApp
+  </a>
+
+  <div style="margin-top:20px;font-size:.9rem;opacity:.8;">
+    ✔ Direct from Wayanad Forest • No Middlemen
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
 <section class="section">
-  <h2>Our Promise</h2>
-  <div class="trust">
-    <div>🌿 Direct from Wayanad</div>
-    <div>❌ No Added Sugar</div>
-    <div>🧪 Lab Tested Purity</div>
-    <div>🐝 Ethical Sourcing</div>
-  </div>
+  <h2>About Bee Kiss</h2>
+
+  <p>
+    Bee Kiss വയനാടൻ വനങ്ങളിൽ നിന്നുള്ള  
+    മായം കലരാത്ത ശുദ്ധ തേനിന്റെ ഒരു വാഗ്ദാനമാണ്.
+  </p>
+
+  <p>
+    ആദിവാസി തേൻ ശേഖരകരിൽ നിന്ന്  
+    നേരിട്ട് ശേഖരിക്കുന്ന തേൻ  
+    യാതൊരു പഞ്ചസാരയും  
+    രാസവസ്തുക്കളും ചേർക്കാതെ  
+    ശുദ്ധമായി നിങ്ങളിലേക്ക് എത്തിക്കുന്നു.
+  </p>
+
+  <p>
+    Bee Kiss ഒരു വലിയ ഫാക്ടറി ബ്രാൻഡ് അല്ല.  
+    ഇത് വിശ്വാസത്തെ അടിസ്ഥാനമാക്കിയുള്ള  
+    ഒരു സത്യസന്ധമായ ശ്രമമാണ്.
+  </p>
+
+  <strong>Bee Kiss – Pure Honey. Honest Promise.</strong>
 </section>
 
+<!-- ================= PHILOSOPHY ================= -->
 <section class="section philosophy">
   “തേൻ മധുരം തന്നെയാണ്.<br>
   പക്ഷേ വിശ്വാസം അതിലും മധുരമാണ്.”
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer>
   <strong>Bee Kiss – Fresh Valley</strong><br>
   Wayanad, Kerala<br><br>
-  <div style="margin-top:20px; font-size:12px; opacity:0.6;">
-    © 2025 Bee Kiss. All rights reserved.
-  </div>
+  © 2025 Bee Kiss. All rights reserved.
 </footer>
 
 </body>
