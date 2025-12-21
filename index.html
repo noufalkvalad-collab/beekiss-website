@@ -32,15 +32,16 @@
 
         html { scroll-behavior: smooth; }
 
-        /* --- HERO SECTION WITH PARALLAX --- */
+        /* --- HERO SECTION WITH FOREST BACKGROUND --- */
         .hero {
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            /* Premium Wayanad Style Forest Background */
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), 
-                        url('https://images.unsplash.com/photo-1587049352846-4a222e784d38?q=80&w=2070&auto=format&fit=crop'); 
+                        url('https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?q=80&w=2073&auto=format&fit=crop'); 
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -74,9 +75,9 @@
             box-shadow: 0 10px 20px rgba(244, 196, 48, 0.3);
         }
 
-        .btn:hover { transform: scale(1.1); background: #fff; box-shadow: 0 15px 30px rgba(244, 196, 48, 0.5); }
+        .btn:hover { transform: scale(1.05); background: #fff; box-shadow: 0 15px 30px rgba(244, 196, 48, 0.5); }
 
-        /* --- STORY SECTION (FIXED IMAGE) --- */
+        /* --- ABOUT SECTION WITH HONEYCOMB IMAGE --- */
         .section { padding: 100px 20px; max-width: 1200px; margin: auto; }
 
         .about-grid {
@@ -85,8 +86,6 @@
             gap: 60px;
             align-items: center;
         }
-
-        .about-image-container { position: relative; }
 
         .about-image-container img {
             width: 100%;
@@ -99,7 +98,7 @@
         .about-text h2 { margin-bottom: 25px; font-size: 2.5rem; }
         .about-text p { font-size: 1.15rem; margin-bottom: 20px; opacity: 0.9; }
 
-        /* --- PRODUCT CARDS --- */
+        /* --- COLLECTIONS --- */
         .collection-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -116,10 +115,10 @@
             transition: 0.5s;
         }
 
-        .card:hover { transform: translateY(-15px); border-color: var(--honey-gold); box-shadow: 0 20px 40px rgba(0,0,0,0.8); }
+        .card:hover { transform: translateY(-15px); border-color: var(--honey-gold); }
         .card i { font-size: 3rem; color: var(--honey-gold); margin-bottom: 20px; }
 
-        /* --- SPOTLIGHT SECTION --- */
+        /* --- SPOTLIGHT WITH PREMIUM JAR IMAGE --- */
         .spotlight {
             background: linear-gradient(rgba(26, 60, 42, 0.9), rgba(7, 15, 12, 0.95)), 
                         url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=2071&auto=format&fit=crop');
@@ -131,7 +130,7 @@
         }
 
         .product-highlight img {
-            max-width: 350px;
+            max-width: 320px;
             border-radius: 25px;
             margin-bottom: 30px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.5);
@@ -159,8 +158,7 @@
             border-top: 1px solid var(--glass);
         }
 
-        .social-links a { color: var(--honey-gold); font-size: 1.8rem; margin: 0 15px; transition: 0.3s; }
-        .social-links a:hover { color: #fff; }
+        .social-links a { color: var(--honey-gold); font-size: 1.8rem; margin: 0 15px; }
 
         /* WhatsApp Button */
         .wa-button {
@@ -178,9 +176,7 @@
             color: white;
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
             z-index: 9999;
-            transition: 0.3s;
         }
-        .wa-button:hover { transform: scale(1.1) rotate(10deg); }
 
         @media (max-width: 768px) {
             .about-text { text-align: center; }
@@ -195,21 +191,21 @@
             <p>Direct from Wayanad Forest</p>
             <h1>BEE KISS</h1>
             <p style="letter-spacing: 2px;">Nature's Liquid Gold</p>
-            <a href="#product" class="btn">Discover Purity</a>
+            <a href="#product" class="btn">Experience Purity</a>
         </div>
     </header>
 
     <section class="section">
         <div class="about-grid">
             <div class="about-image-container">
-                <img src="https://images.unsplash.com/photo-1587049352851-8d4e8de13c4c?auto=format&fit=crop&w=800&q=80" alt="Pure Wayanad Honeycomb">
+                <img src="https://images.unsplash.com/photo-1587049352847-81a56d773cae?q=80&w=800&auto=format&fit=crop" alt="Fresh Honeycomb from Forest">
             </div>
             <div class="about-text">
                 <h2>The Forest Promise</h2>
-                <p>വയനാടൻ വനങ്ങളിൽ നിന്ന് നേരിട്ട് ശേഖരിക്കുന്ന മായം കലരാത്ത ശുദ്ധമായ തേൻ. ആദിവാസി തേൻ ശേഖരകരിൽ നിന്ന് യാതൊരു ഇടനിലക്കാരുമില്ലാതെ Bee Kiss നിങ്ങളിലെത്തുന്നു.</p>
+                <p>വയനാടൻ വനങ്ങളിൽ നിന്ന് നേരിട്ട് ശേഖരിക്കുന്ന മായം കലരാത്ത ശുദ്ധമായ തേൻ. ആദിവാസി തേൻ ശേഖരകരിൽ നിന്ന് യാതൊരു ഇടനിലക്കാരുമില്ലാതെ <b>Bee Kiss</b> നിങ്ങളിലെത്തുന്നു.</p>
                 <p><i class="fas fa-certificate" style="color:var(--honey-gold)"></i> 100% Raw & Unprocessed</p>
                 <p><i class="fas fa-ban" style="color:var(--honey-gold)"></i> No Sugar Or Chemicals</p>
-                <p><i class="fas fa-map-marker-alt" style="color:var(--honey-gold)"></i> Authentic Wayanad Origin</p>
+                <p><i class="fas fa-tree" style="color:var(--honey-gold)"></i> Sourced from Deep Wilds</p>
             </div>
         </div>
     </section>
@@ -220,29 +216,29 @@
             <div class="card">
                 <i class="fas fa-vial"></i>
                 <h3>Honey Stick</h3>
-                <p>Perfect for energy on the go. Pure honey shots for your busy life.</p>
+                <p>Perfect for energy on the go. Travel-friendly pure honey shots.</p>
                 <p style="color:var(--honey-gold); margin-top:10px; font-weight:bold;">₹10 / Stick</p>
             </div>
             <div class="card">
                 <i class="fas fa-jar"></i>
                 <h3>Wild Raw Honey</h3>
-                <p>Straight from the hive to the jar. Unfiltered and full of nutrients.</p>
+                <p>Straight from the hive to the jar. Unfiltered and full of forest essence.</p>
             </div>
             <div class="card">
                 <i class="fas fa-hand-holding-heart"></i>
                 <h3>Ginger Infused</h3>
-                <p>The healing power of ginger blended with forest nectar for immunity.</p>
+                <p>Wayanad Ginger blended with raw honey for natural immunity.</p>
             </div>
         </div>
     </section>
 
     <section id="product" class="spotlight">
         <div class="product-highlight">
-            <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=800&auto=format&fit=crop" alt="Bee Kiss Honey Jar">
+            <img src="https://images.unsplash.com/photo-1587049633562-ad3002f38b7a?q=80&w=800&auto=format&fit=crop" alt="Premium Bee Kiss Honey Jar">
             <h2 style="color:#fff;">Pure Honey Stick</h2>
-            <p style="max-width:600px; margin: 20px auto; opacity: 0.8;">എവിടെയും എളുപ്പത്തിൽ കൊണ്ടുപോകാവുന്ന, മായം കലരാത്ത അസ്സൽ തേൻ സ്റ്റിക്കുകൾ.</p>
+            <p style="max-width:600px; margin: 20px auto; opacity: 0.8;">വയനാടൻ വനങ്ങളിൽ നിന്നുള്ള ഏറ്റവും ശുദ്ധമായ തേൻ ഇപ്പോൾ സ്റ്റിക്കുകളായി നിങ്ങളുടെ കൈകളിലേക്ക്.</p>
             <div class="price-tag">₹10</div>
-            <a href="https://wa.me/919961629597?text=Hi, I want to order Bee Kiss Honey Sticks" class="btn">Order via WhatsApp</a>
+            <a href="https://wa.me/919961629597?text=Hello Bee Kiss, I want to order Honey Sticks" class="btn">Order via WhatsApp</a>
         </div>
     </section>
 
@@ -255,11 +251,11 @@
         <h3 style="margin-bottom: 15px;">BEE KISS – FRESH VALLEY</h3>
         <p>Wayanad, Kerala, India</p>
         <div class="social-links" style="margin: 30px 0;">
+            <a href="https://wa.me/919961629597"><i class="fab fa-whatsapp"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="https://wa.me/919961629597"><i class="fab fa-whatsapp"></i></a>
         </div>
-        <p style="opacity: 0.3; font-size: 0.8rem;">&copy; 2025 Bee Kiss Honey. Sourced with Integrity.</p>
+        <p style="opacity: 0.3; font-size: 0.8rem;">&copy; 2025 Bee Kiss Honey. Pure. Honest. Wayanad.</p>
     </footer>
 
     <a href="https://wa.me/919961629597" class="wa-button" target="_blank">
