@@ -3,136 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bee Kiss | Pure Wayanad Forest Honey</title>
-    
+
+    <!-- ✅ SEO TITLE -->
+    <title>Bee Kiss® | Pure Wild Forest Honey from Wayanad</title>
+
+    <!-- ✅ SEO META DESCRIPTION -->
+    <meta name="description" content="Bee Kiss brings you 100% pure, raw forest honey sourced directly from the deep forests of Wayanad. No sugar. No chemicals. Just honest honey with trust.">
+
+    <!-- ✅ SEO KEYWORDS (optional but useful) -->
+    <meta name="keywords" content="Bee Kiss honey, Wayanad forest honey, pure honey Kerala, raw honey India, wild honey, tribal honey">
+
+    <!-- ✅ AUTHOR -->
+    <meta name="author" content="Bee Kiss – Fresh Valley">
+
+    <!-- ✅ OPEN GRAPH (WhatsApp / Facebook Preview) -->
+    <meta property="og:title" content="Bee Kiss® – Pure Forest Honey from Wayanad">
+    <meta property="og:description" content="From the heart of Wayanad forests to your home. No sugar. No chemicals. Just honest honey.">
+    <meta property="og:image" content="https://beekiss.in/og-image.jpg">
+    <meta property="og:url" content="https://beekiss.in">
+    <meta property="og:type" content="website">
+
+    <!-- ✅ TWITTER PREVIEW (optional but good) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bee Kiss® – Pure Wild Forest Honey">
+    <meta name="twitter:description" content="Experience real forest honey sourced ethically from Wayanad.">
+    <meta name="twitter:image" content="https://beekiss.in/og-image.jpg">
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;700&family=Playfair+Display:italic,wght@700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        :root {
-            --honey-gold: #f4c430; 
-            --deep-forest: #070f0c;
-            --leaf-green: #1a3c2a;
-            --soft-cream: #fdfbf7;
-            --glass: rgba(255, 255, 255, 0.1);
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background: var(--deep-forest);
-            color: var(--soft-cream);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3 { font-family: 'Cinzel', serif; color: var(--honey-gold); letter-spacing: 2px; }
-
-        html { scroll-behavior: smooth; }
-
-        /* --- HERO SECTION --- */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), 
-                        url('https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?q=80&w=2073&auto=format&fit=crop'); 
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-        }
-
-        .hero-content {
-            padding: 50px;
-            border-radius: 30px;
-            backdrop-filter: blur(10px);
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(244, 196, 48, 0.2);
-            animation: fadeIn 2s ease-in;
-        }
-
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-
-        .hero h1 { font-size: clamp(3rem, 10vw, 6rem); margin: 0; text-shadow: 4px 4px 15px rgba(0,0,0,0.9); }
-        .hero p { font-size: 1.2rem; text-transform: uppercase; letter-spacing: 4px; margin: 15px 0 30px; }
-
-        .btn {
-            padding: 18px 45px;
-            background: var(--honey-gold);
-            color: var(--deep-forest);
-            text-decoration: none;
-            font-weight: 800;
-            border-radius: 50px;
-            text-transform: uppercase;
-            transition: 0.4s;
-            display: inline-block;
-            box-shadow: 0 10px 20px rgba(244, 196, 48, 0.3);
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover { transform: scale(1.05); background: #fff; }
-
-        /* --- COMPARISON TABLE SECTION --- */
-        .comparison-section { padding: 80px 20px; text-align: center; }
-        .table-container { 
-            max-width: 900px; margin: 40px auto; overflow-x: auto; 
-            background: rgba(255,255,255,0.03); border-radius: 20px; padding: 20px;
-        }
-        table { width: 100%; border-collapse: collapse; color: #fff; }
-        th, td { padding: 20px; border-bottom: 1px solid var(--glass); text-align: left; }
-        th { color: var(--honey-gold); font-family: 'Cinzel'; }
-        .highlight { color: var(--honey-gold); font-weight: bold; }
-
-        /* --- PROCESS FLOW --- */
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
-        .process-step { padding: 20px; }
-        .process-step i { font-size: 2.5rem; color: var(--honey-gold); margin-bottom: 15px; }
-
-        /* --- COLLECTIONS --- */
-        .section { padding: 80px 20px; max-width: 1200px; margin: auto; }
-        .card {
-            background: linear-gradient(145deg, #14241c, #070f0c);
-            padding: 40px;
-            border-radius: 25px;
-            text-align: center;
-            border: 1px solid var(--glass);
-            transition: 0.5s;
-        }
-        .card:hover { border-color: var(--honey-gold); transform: translateY(-10px); }
-
-        /* --- PHILOSOPHY --- */
-        .philosophy {
-            padding: 100px 20px;
-            background: #000;
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(1.5rem, 4vw, 2.5rem);
-            font-style: italic;
-            color: var(--honey-gold);
-        }
-
-        /* --- FOOTER --- */
-        footer { padding: 60px 20px; background: #020a07; text-align: center; opacity: 0.9; }
-        .social-links a { color: var(--honey-gold); font-size: 1.5rem; margin: 0 10px; transition: 0.3s; }
-        .social-links a:hover { color: #fff; }
-
-        .wa-button {
-            position: fixed; bottom: 30px; right: 30px; background: #25d366;
-            width: 60px; height: 60px; border-radius: 50%; display: flex;
-            align-items: center; justify-content: center; font-size: 30px;
-            color: white; z-index: 1000; box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
-    </style>
-</head>
 <body>
 
     <header class="hero">
