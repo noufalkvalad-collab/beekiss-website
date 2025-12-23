@@ -18,6 +18,65 @@
   --accent:#14241c;
   --cream:#fdfbf7;
 }
+/* Hamburger */
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+  z-index:1001;          /* 🔥 VERY IMPORTANT */
+}
+
+
+.menu-toggle span{
+  width:25px;
+  height:3px;
+  background:var(--honey-gold);
+  margin:4px 0;
+  transition:0.4s;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .menu-toggle{
+    display:flex;
+    z-index:1002;
+  }
+
+  .nav-links{
+    position:fixed;
+    top:65px;
+    left:0;
+    height:100vh;
+    width:70%;
+    max-width:320px;
+
+    /* 🔥 TRANSPARENT / GLASS EFFECT */
+    background:rgba(7,15,12,0.55);     /* semi transparent */
+    backdrop-filter:blur(12px);        /* glass feel */
+    -webkit-backdrop-filter:blur(12px);
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:18px;
+    padding:30px 25px;
+
+    display:none;
+    z-index:1001;
+
+    border-right:1px solid rgba(244,196,48,0.2);
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .nav-links a{
+    width:100%;
+    display:block;
+  }
+}
+
 
 *{box-sizing:border-box}
 body{
