@@ -22,6 +22,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
+
+        .beekiss-navbar{
+  position:sticky;
+  top:0;
+  z-index:999;
+  background:rgba(7,15,12,0.95);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(244,196,48,0.15);
+}
+
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-family:'Cinzel',serif;
+  color:var(--honey-gold);
+  text-decoration:none;
+  letter-spacing:2px;
+  font-size:1.2rem;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:var(--soft-cream);
+  font-size:0.9rem;
+}
+
+.nav-links a:hover{
+  color:var(--honey-gold);
+}
+
+.nav-cta{
+  padding:8px 18px;
+  border-radius:30px;
+  background:var(--honey-gold);
+  color:var(--deep-forest) !important;
+  font-weight:700;
+}
+
         :root {
             --honey-gold: #f4c430; 
             --deep-forest: #070f0c;
@@ -147,6 +198,19 @@
     </style>
 </head>
 <body>
+<nav class="beekiss-navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">BEE KISS</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="blog.html">Journal</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="https://wa.me/919961629597" class="nav-cta">WhatsApp</a></li>
+    </ul>
+  </div>
+</nav>
 
     <header class="hero">
         <div class="hero-content">
