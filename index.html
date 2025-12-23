@@ -49,6 +49,7 @@
   font-size:1.2rem;
 }
 
+/* Desktop Menu */
 .nav-links{
   list-style:none;
   display:flex;
@@ -72,6 +73,47 @@
   color:var(--deep-forest) !important;
   font-weight:700;
 }
+
+/* Hamburger */
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+}
+
+.menu-toggle span{
+  width:25px;
+  height:3px;
+  background:var(--honey-gold);
+  margin:4px 0;
+  transition:0.4s;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .menu-toggle{
+    display:flex;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    right:0;
+    background:#070f0c;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:30px 0;
+    display:none;
+    border-top:1px solid rgba(244,196,48,0.15);
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+}
+
 
         :root {
             --honey-gold: #f4c430; 
@@ -202,7 +244,13 @@
   <div class="nav-container">
     <a href="index.html" class="logo">BEE KISS</a>
 
-    <ul class="nav-links">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="story.html">Our Story</a></li>
       <li><a href="blog.html">Journal</a></li>
@@ -211,6 +259,7 @@
     </ul>
   </div>
 </nav>
+
 
     <header class="hero">
         <div class="hero-content">
