@@ -25,6 +25,7 @@
 
         .beekiss-navbar{
   position:sticky;
+  min-height:65px;
   top:0;
   z-index:999;
   background:rgba(7,15,12,0.95);
@@ -79,7 +80,9 @@
   display:none;
   flex-direction:column;
   cursor:pointer;
+  z-index:1001;          /* 🔥 VERY IMPORTANT */
 }
+
 
 .menu-toggle span{
   width:25px;
@@ -92,28 +95,24 @@
 /* MOBILE */
 @media(max-width:768px){
 
+  .menu-toggle{
+    display:flex;        /* 🔥 hamburger visible */
+  }
+
   .nav-links{
     position:absolute;
-    top:70px;
-    left:0;                 /* 👈 left side start */
+    top:65px;
+    left:0;
     background:#070f0c;
-    width:70%;               /* 👈 pakuthi / compact */
-    max-width:320px;         /* 👈 premium limit */
+    width:70%;
+    max-width:320px;
     flex-direction:column;
-    align-items:flex-start;  /* 👈 left aligned content */
+    align-items:flex-start;
     gap:18px;
     padding:30px 25px;
     display:none;
+    z-index:1000;        /* 🔥 below hamburger */
     border-right:1px solid rgba(244,196,48,0.15);
-  }
-
-  .nav-links li{
-    width:100%;
-  }
-
-  .nav-links a{
-    width:100%;
-    display:block;
   }
 
   .nav-links.active{
