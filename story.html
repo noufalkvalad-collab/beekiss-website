@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ml">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Bee Kiss Story | Journey of Purity</title>
 
-<!-- PRELOAD HERO IMAGE -->
 <link rel="preload" as="image" href="beekiss_honey.jpeg">
 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;700&family=Gayathri:wght@400;700&display=swap" rel="stylesheet">
@@ -18,77 +17,108 @@
   --accent:#14241c;
   --cream:#fdfbf7;
 }
-/* Hamburger */
-.menu-toggle{
-  display:none;
-  flex-direction:column;
-  cursor:pointer;
-  z-index:1001;          /* 🔥 VERY IMPORTANT */
-}
 
-
-.menu-toggle span{
-  width:25px;
-  height:3px;
-  background:var(--honey-gold);
-  margin:4px 0;
-  transition:0.4s;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-
-  .menu-toggle{
-    display:flex;
-    z-index:1002;
-  }
-
-  .nav-links{
-    position:fixed;
-    top:65px;
-    left:0;
-    height:100vh;
-    width:70%;
-    max-width:320px;
-
-    /* 🔥 TRANSPARENT / GLASS EFFECT */
-    background:rgba(7,15,12,0.55);     /* semi transparent */
-    backdrop-filter:blur(12px);        /* glass feel */
-    -webkit-backdrop-filter:blur(12px);
-
-    flex-direction:column;
-    align-items:flex-start;
-    gap:18px;
-    padding:30px 25px;
-
-    display:none;
-    z-index:1001;
-
-    border-right:1px solid rgba(244,196,48,0.2);
-  }
-
-  .nav-links.active{
-    display:flex;
-  }
-
-  .nav-links a{
-    width:100%;
-    display:block;
-  }
-}
-
-
-*{box-sizing:border-box}
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-  margin:0;
   font-family:'Montserrat',sans-serif;
   background:var(--dark);
   color:var(--cream);
   line-height:1.8;
 }
-
 .malayalam{font-family:'Gayathri',sans-serif}
 h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
+
+/* ================= NAVBAR ================= */
+
+.beekiss-navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(7,15,12,0.95);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(244,196,48,0.15);
+}
+
+.nav-container{
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-family:'Cinzel',serif;
+  color:var(--gold);
+  text-decoration:none;
+  font-size:1.2rem;
+  letter-spacing:2px;
+}
+
+/* Desktop menu */
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+.nav-links a{
+  text-decoration:none;
+  color:var(--cream);
+  font-size:0.9rem;
+}
+.nav-cta{
+  padding:8px 18px;
+  border-radius:30px;
+  background:var(--gold);
+  color:var(--dark)!important;
+  font-weight:700;
+}
+
+/* Hamburger */
+.menu-toggle{
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+  z-index:1003;
+}
+.menu-toggle span{
+  width:25px;
+  height:3px;
+  background:var(--gold);
+  margin:4px 0;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:768px){
+  .menu-toggle{display:flex}
+
+  .nav-links{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:70%;
+    max-width:320px;
+
+    background:rgba(7,15,12,0.55);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+    padding:90px 25px 30px;
+
+    display:none;
+    z-index:1002;
+    border-right:1px solid rgba(244,196,48,0.25);
+  }
+
+  .nav-links.active{display:flex}
+  .nav-links a{width:100%;font-size:1rem}
+}
+
+/* ================= HEADER ================= */
 
 .story-header{
   height:65vh;
@@ -105,13 +135,14 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
   padding:20px;
 }
 
+/* ================= CONTENT ================= */
+
 .content-wrap{
   max-width:900px;
   margin:auto;
   padding:80px 20px;
 }
 
-/* animation */
 .reveal{
   opacity:0;
   transform:translateY(30px);
@@ -122,7 +153,6 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
   transform:none;
 }
 
-/* philosophy card */
 .philosophy-card{
   background:var(--accent);
   padding:45px;
@@ -133,7 +163,6 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
   box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
 
-/* steps */
 .step{
   display:flex;
   gap:30px;
@@ -152,16 +181,13 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
   flex-shrink:0;
 }
 
-/* images */
 .visual-img{
   width:100%;
-  height:auto;
   border-radius:22px;
   margin:50px 0;
   border:1px solid var(--gold);
 }
 
-/* gallery */
 .gallery{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -170,12 +196,10 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
 }
 .gallery img{
   width:100%;
-  height:auto;
   border-radius:18px;
   border:1px solid rgba(244,196,48,.35);
 }
 
-/* CTA */
 .btn-final{
   padding:20px 55px;
   background:var(--gold);
@@ -187,7 +211,6 @@ h1,h2,h3{font-family:'Cinzel',serif;color:var(--gold)}
   margin-top:40px;
 }
 
-/* footer */
 footer{
   text-align:center;
   padding:50px 20px;
@@ -197,14 +220,13 @@ footer{
 </head>
 
 <body>
+
 <nav class="beekiss-navbar">
   <div class="nav-container">
     <a href="index.html" class="logo">BEE KISS</a>
 
     <div class="menu-toggle" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </div>
 
     <ul class="nav-links" id="navLinks">
@@ -231,9 +253,7 @@ footer{
       “തേൻ മധുരം തന്നെയാണ്.<br> പക്ഷേ വിശ്വാസം അതിലും മധുരമാണ്.”
     </h2>
     <p class="malayalam">
-      വയനാടൻ വനങ്ങളിലെ ഓരോ തുള്ളി തേനിനും പിന്നിൽ
-      സത്യസന്ധമായ ഒരു കഥയുണ്ട്.  
-      അത് ഒരു ഉൽപ്പന്നമല്ല —  
+      Bee Kiss ഒരു ഉൽപ്പന്നമല്ല —  
       അത് പ്രകൃതിയോടുള്ള ഒരു വാഗ്ദാനമാണ്.
     </p>
   </div>
@@ -242,82 +262,46 @@ footer{
     <div class="step-icon"><i class="fas fa-tree"></i></div>
     <div>
       <h3>From the Wild</h3>
-      <p class="malayalam">
-        വയനാടൻ വനങ്ങളിൽ ആദിവാസി കൂട്ടായ്മകൾ
-        ശേഖരിക്കുന്ന അസ്സൽ വനതേൻ.
-      </p>
+      <p class="malayalam">വയനാടൻ വനങ്ങളിൽ നിന്നുള്ള അസ്സൽ തേൻ.</p>
     </div>
   </div>
 
-  <!-- MAIN IMAGE -->
-  <img src="beekiss_trial_11.png"
-       class="visual-img reveal"
-       loading="lazy"
-       decoding="async"
-       width="900"
-       height="600"
-       alt="Forest Honey Collection">
-
-  <div class="step reveal">
-    <div class="step-icon"><i class="fas fa-hands"></i></div>
-    <div>
-      <h3>Handled with Respect</h3>
-      <p class="malayalam">
-        ചൂടാക്കലില്ല. രാസവസ്തുക്കളില്ല.
-        തേനിന്റെ സ്വഭാവം 그대로.
-      </p>
-    </div>
-  </div>
-
-  <!-- IMAGE GALLERY -->
-  <div class="gallery reveal">
-    <img src="beekiss_trial_12.png" loading="lazy" decoding="async" width="400" height="400" alt="">
-    <img src="beekiss_trial_14.png" loading="lazy" decoding="async" width="400" height="400" alt="">
-    <img src="beekiss_stick_1.png" loading="lazy" decoding="async" width="400" height="400" alt="">
-    <img src="turmaric.jpg" loading="lazy" decoding="async" width="400" height="400" alt="">
-  </div>
+  <img src="beekiss_trial_11.png" class="visual-img reveal" alt="Forest Honey">
 
   <div class="step reveal">
     <div class="step-icon"><i class="fas fa-heart"></i></div>
     <div>
       <h3>Shared with Trust</h3>
-      <p class="malayalam">
-        ഓരോ ബോട്ടിലും — വിശ്വാസത്തിന്റെ മുദ്ര.
-        ഇടനിലക്കാരില്ലാതെ, നേരിട്ട് നിങ്ങളിലേക്ക്.
-      </p>
+      <p class="malayalam">ഇടനിലക്കാരില്ലാതെ, നേരിട്ട് നിങ്ങളിലേക്ക്.</p>
     </div>
   </div>
 
   <div style="text-align:center">
-    <a href="https://wa.me/919961629597"
-       class="btn-final reveal">
-       Bee Kiss അനുഭവിക്കാം
+    <a href="https://wa.me/919961629597" class="btn-final reveal">
+      Bee Kiss അനുഭവിക്കാം
     </a>
   </div>
 
 </div>
 
 <footer>
-  Bee Kiss – Fresh Valley<br>
-  Wayanad, Kerala<br>
-  Pure • Honest • Forest-born
+Bee Kiss – Fresh Valley<br>
+Wayanad, Kerala
 </footer>
 
 <script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+
 const reveals=document.querySelectorAll('.reveal');
 const observer=new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    }
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('show')}
   });
 },{threshold:0.15});
 reveals.forEach(r=>observer.observe(r));
 </script>
-    <script>
-function toggleMenu(){
-  document.getElementById("navLinks").classList.toggle("active");
-}
-</script>
+
 </body>
 </html>
