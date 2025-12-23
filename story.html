@@ -314,6 +314,10 @@ const observer=new IntersectionObserver(entries=>{
 },{threshold:0.15});
 reveals.forEach(r=>observer.observe(r));
 </script>
-
+    <script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 </body>
 </html>
